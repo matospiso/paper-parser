@@ -23,8 +23,8 @@ TEST_P = "test_inputs/Embarrassingly Shallow Autoencoders for Sparse Data.pdf"
 
 def fix_letters(text: str) -> str:
     # fix letters f,t,T
-    for c in "ftT"
-    text = text.replace(f"/{c}_", c)
+    for c in "ftT":
+        text = text.replace(f"/{c}_", c)
     # fix .sc
     for c in "abcdefghijklmnopqrstuvwxyz":
         text = text.replace(f"/{c}.sc", c.upper())
